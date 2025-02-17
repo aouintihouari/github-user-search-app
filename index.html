@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Frontend Mentor | GitHub user search app</title>
+  </head>
+  <body data-theme="dark">
+    <main class="container">
+      <header class="header">
+        <h1 class="devfinder-title">devfinder</h1>
+        <div class="theme-switch">
+          <p class="theme-switch__text">DARK</p>
+          <img class="theme-switch__image" src="assets/icon-moon.svg" alt="" />
+        </div>
+      </header>
+      <form class="navigation" id="form">
+        <div>
+          <img class="search__icon" src="assets/icon-search.svg" alt="" />
+          <input
+            type="text"
+            class="search__bar"
+            id="search"
+            placeholder="Search GitHub username…"
+          />
+          <span class="no-results">No results</span>
+        </div>
+        <button id="submit" class="search__btn">Search</button>
+      </form>
+      <section class="profile">
+        <div class="profile__top">
+          <img
+            class="profile__image"
+            src="https://avatars.githubusercontent.com/u/583231?v=4"
+            alt=""
+          />
+          <div class="profile__infos">
+            <div class="profile__infos__left">
+              <h2 class="profile__name">The Octocat</h2>
+              <p><a class="profile__username" href="#">@octocat</a></p>
+            </div>
+            <p class="profile__join__date">Joined 25 Jan 2011</p>
+          </div>
+        </div>
+        <div class="profile__details">
+          <p class="profile__bio">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
+            odio. Quisque volutpat mattis eros.
+          </p>
+          <div class="profile__data">
+            <div class="profile__data__section">
+              <h3 class="profile__data__section__title">Repos</h3>
+              <p class="profile__data__section__result repos">8</p>
+            </div>
+            <div class="profile__data__section">
+              <h3 class="profile__data__section__title">Followers</h3>
+              <p class="profile__data__section__result followers">3938</p>
+            </div>
+            <div class="profile__data__section">
+              <h3 class="profile__data__section__title">Following</h3>
+              <p class="profile__data__section__result following">9</p>
+            </div>
+          </div>
+          <div class="profile__links">
+            <ul class="profile__links__left">
+              <li class="profile__link">
+                <img src="assets/icon-location.svg" alt="" /> San Francisco
+              </li>
+              <li class="profile__link">
+                <img src="assets/icon-website.svg" alt="" /> https://github.blog
+              </li>
+            </ul>
+            <ul class="profile__links__right">
+              <li class="profile__link">
+                <img src="assets/icon-twitter.svg" alt="" /> Not Available
+              </li>
+              <li class="profile__link">
+                <img src="assets/icon-company.svg" alt="" /> @github
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
